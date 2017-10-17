@@ -1,0 +1,231 @@
+html::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar
+{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+html::-webkit-scrollbar-thumb
+{
+	background-color: #000000;
+}
+
+header {
+    height:70px;
+    width:100%;
+    border-bottom:2px solid #333;
+    padding-left:50px;
+    box-sizing: border-box;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background:rgba(255,255,255,0.7)
+}
+
+#main {
+    width:100%;
+}
+
+body {
+    margin:0;
+    font-family: 'inconsolata';
+}
+
+#banner {
+    width:100%;
+    height:100%;
+    background-image:url(../img/banner.jpg);
+  
+    background-size:cover;
+    transition:all 10ms linear;
+}
+
+#main .container {
+    width:100%;
+    padding:5% 10%;
+    position:relative;
+    box-sizing: border-box;
+}
+
+.left {
+    width:45%;
+    margin-right:10%;
+    display:inline-block;
+    vertical-align: top;
+}
+
+.right {
+    width:45%;
+    display:inline-block;
+    vertical-align: top;
+}
+
+#gmaps {
+    position:relative;
+    width:100%;
+}
+
+header .nav {
+    display:inline-block;
+    height:70px;
+    font-size:20px;
+    line-height:70px;
+    text-transform: uppercase;
+    margin:0px 20px 0px 20px;
+    text-shadow: 0px 0px 5px #ffffff;
+}
+header .nav:hover{
+    cursor:pointer;
+}
+header .nav:hover span{
+    cursor:pointer;
+    background:yellow;
+}
+
+input.contact-form {
+    width:100%;
+    padding:10px 20px;
+    border:1px solid #333;
+    margin:10px 0px;
+}
+
+textarea.contact-form {
+    border:1px solid #333;
+    padding:10px 20px;
+    width:100%;
+    resize: none;
+    min-height:200px;
+    margin:10px 0px;
+}
+
+.contact-button {
+    float:right;
+    background:#333;
+    color:white;
+    border:1px solid white;
+    padding:10px 20px;
+    min-width:150px
+}
+.contact-button:hover{
+    cursor:pointer;
+    background:white;
+    border:1px solid #333;
+    color:#333;
+}
+
+footer {
+   /* background-image:url(../img/footer.jpg);*/
+    background-position:50% 50%;
+    background-size:cover;
+    min-height:200px;
+    width:100%;
+    padding:5% 10%;
+    position:relative;
+    box-sizing: border-box;
+    color:white;
+    background-color:#333;
+
+}
+
+.title {
+    position:absolute;
+    bottom:70px;
+    width:100%;
+    text-align: center;
+    color:white;
+    font-size:60px
+}
+#main .container .title.black{
+    color:#333;
+    position:relative;
+    margin:0;
+    bottom:0;
+}
+.subtitle {
+    position:absolute;
+    bottom:60px;
+    width:100%;
+    text-align: center;
+    color:white;
+    font-size:30px
+}
+
+#main-title {
+    border-top:30px solid #444;
+    border-bottom:20px solid #444;
+    margin-bottom:50px;
+    padding:5px 0px 5px 0px;
+}
+
+.underlined {
+    border-bottom:6px solid #444
+}
+
+.spacer {
+    margin:50px 0px;
+}
+
+#banner2 {
+    width:50%;
+    height:100%;
+    background-image:url(../img/banner2.jpg);
+    position:relative;
+    background-size:cover;
+   
+    display:inline-block;
+    margin-right:5%;
+}
+#banner3 {
+    width:45%;
+    height:100%;
+    background-image:url(../img/banner3.jpg);
+    position:relative;
+    background-size:cover;
+    
+    display:inline-block;
+}
+.out-right{
+	transform:translatex(25px) translatey(0px);
+	opacity:0 !important;
+	transition:all 800ms ease-out;
+}
+.out-left{
+	transform:translatex(-25px) translatey(0px);
+	opacity:0 !important;
+	transition:all 800ms ease-out;
+}
+.out-bottom{
+	transform:translatex(0px) translatey(25px);
+	opacity:0 !important;
+	transition:all 800ms ease-out;
+}
+.out-top{
+	transform:translatex(0px) translatey(-25px);
+	opacity:0 !important;
+	transition:all 800ms ease-out;
+}
+.out-center{
+	transform:translatex(0px) translatey(0px);
+	opacity:0 !important;
+	transition:all 800ms ease-out;
+}
+.out-animation{
+    
+}
+.entrance{
+	transform:translatex(0px) translatey(0px);
+	opacity:1 !important;
+}
+.hoversection{
+    transition:opacity 300ms ease-out;
+}
+.hoversection:hover{
+    cursor:pointer;
+    opacity:0.8 !important;
+}

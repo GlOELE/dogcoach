@@ -1,0 +1,55 @@
+<html>
+<head>
+<script src="js/main.js"></script>
+<link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="nav" onclick="render('home')"><span>home</span></div>
+        <div class="nav" onclick="render('corsi')"><span>corsi</span></div>
+        <div class="nav" onclick="render('foto')"><span>foto</span></div>
+        <div class="nav" onclick="render('about')"><span>about</span></div>
+        <div class="nav" onclick="render('contatti')"><span>contatti</span></div>
+    </header>
+    <div id="main">
+        <div id="banner">
+            <h1 class="title">LAURA SANTI</h1>
+            <h1 class="subtitle load-animation out-top">Educatrice per cani ad Arosio</h1>
+        </div>
+        <div class="container">
+            <span class="title black out-animation out-right">LOREM IPSUM DOLOR SIT AMET</span>
+
+            <h1 id="main-title" class="out-animation out-left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis felis eget venenatis feugiat. Sed laoreet turpis nec turpis vestibulum, eu gravida tortor tincidunt.</h1>
+            <div  class="out-animation out-bottom">
+            <div id="banner2" class="hoversection" onclick="render('corsi')">
+            <h1 class="title">CORSI PERSONALIZZATI</h1>
+            <h1 class="subtitle">Tutta l'esperienza necessaria</h1>
+            </div><div id="banner3" class="hoversection" onclick="render('about')">
+            <h1 class="title">SU DI ME</h1>
+            <h1 class="subtitle"></h1>
+            </div></div>
+            <div class="spacer underlined"></div>
+            <div class="left out-animation out-left">
+                <h1>Dove trovarmi</h1>
+                <div id="gmaps">
+                    <script src='https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDEmVfrwDtJ9cSKD0DiulMHUydN5U1KZ3I'></script><div style='overflow:hidden;height:475px;width:100%;'><div id='gmap_canvas' style='height:475px;width:100%;'></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style></div><script type='text/javascript'>function init_map(){var myOptions = {zoom:12,center:new google.maps.LatLng(45.7211,9.204160000000002),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(45.7211,9.204160000000002)});infowindow = new google.maps.InfoWindow({content:'<strong>Dog trainer</strong><br>Via volta 38<br>22060 Arosio<br>'});google.maps.event.addListener(marker, 'click', function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+                </div>
+            </div><div class="right out-animation out-right">
+                <h1 class="underlined">Fammi una domanda</h1>
+                <input type="text" class="contact-form" placeholder="Nome"/>
+                <input type="text" class="contact-form" placeholder="Email"/>
+                <textarea type="text" class="contact-form" placeholder="Messaggio"></textarea>
+                <h4>Ti contatterò il prima possibile :)</h4>
+                <button class="contact-button">INVIA</button>
+            </div>
+            <div class="spacer underlined"></div>
+            
+        </div>
+    </div>
+    <footer>
+        <h1>Educatrice per cani</h1>
+        <p>Laura Santi<br>Arosio - Via Volta 38<br><br>+39 3887892733</p>
+    </footer>
+</body>
+</html>
